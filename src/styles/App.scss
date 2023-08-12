@@ -2,13 +2,17 @@
 
 $primary: #6f6af8;
 $blue: #1890ff;
+$bluebg: #dceeff;
 $yellow: #fadb14;
+$yellowbg: #fefbe7;
 $white: #fff;
 $creamwhite: #efefef;
 $bgcolor: #fafafa;
 $rgba05: rgba(0, 0, 0, 0.05);
+$rgba25: rgba(0, 0, 0, 0.25);
 $rgba45: rgba(0, 0, 0, 0.45);
 $rgba85: rgba(0, 0, 0, 0.85);
+$upboarder: #d9d9d9;
 
 @import "./CommentSection.scss";
 @import "./OnboardUser.scss";
@@ -83,4 +87,22 @@ body {
 
 .ant-tabs-top > .ant-tabs-nav::before {
   border-bottom: none;
+}
+
+.ant-upload-drag {
+  border: 1px solid $upboarder !important;
+}
+
+.ant-steps-item-finish .ant-steps-item-icon {
+  background-color: $white !important;
+  border-color: $primary !important;
+}
+
+.ant-steps-item-wait .ant-steps-item-icon {
+  background-color: transparent !important;
+  border-color: $rgba25 !important;
+}
+
+.ant-steps-item-wait .ant-steps-item-icon > .ant-steps-icon {
+  color: $rgba25 !important;
 }
