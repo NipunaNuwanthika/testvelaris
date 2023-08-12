@@ -1,0 +1,86 @@
+// variables
+
+$primary: #6f6af8;
+$blue: #1890ff;
+$yellow: #fadb14;
+$white: #fff;
+$creamwhite: #efefef;
+$bgcolor: #fafafa;
+$rgba05: rgba(0, 0, 0, 0.05);
+$rgba45: rgba(0, 0, 0, 0.45);
+$rgba85: rgba(0, 0, 0, 0.85);
+
+@import "./CommentSection.scss";
+@import "./OnboardUser.scss";
+@import "./ImageUpload.scss";
+@import "./Responsive.scss";
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif !important;
+  background: $bgcolor;
+}
+
+.app {
+  padding: 0 25px;
+}
+
+.header {
+  text-align: left;
+  margin: 20px 30px;
+  color: $rgba85;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 46px;
+}
+
+//Layout ui
+
+.columns {
+  display: flex;
+  margin: 20px;
+  .left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 12.5px;
+    background: $white;
+    border-radius: 5px;
+    border: 1px solid $creamwhite;
+    padding: 24px;
+  }
+
+  .right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 12.5px;
+  }
+}
+
+.tabs-pane-left {
+  flex: 1;
+  width: 50%;
+  padding: 20px;
+}
+
+.onboard-user,
+.form-section,
+.image-upload-section {
+  background: $white;
+}
+
+//Ant component ui changes
+
+.ant-tabs-tabpane {
+  border-bottom: none !important;
+}
+
+.ant-btn-primary {
+  background-color: $primary;
+}
+
+.ant-tabs-top > .ant-tabs-nav::before {
+  border-bottom: none;
+}

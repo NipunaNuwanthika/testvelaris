@@ -1,0 +1,11 @@
+.image-upload-section {
+  @extend .onboard-user;
+  background: $white;
+  border-radius: 0;
+
+  .image-header {
+    margin-top: 5px;
+    margin-bottom: 25px;
+    @extend .onboard-header;
+  }
+}

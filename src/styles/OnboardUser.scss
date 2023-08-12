@@ -1,0 +1,20 @@
+.onboard-user {
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid $creamwhite;
+
+  .onboard-header {
+    font-family: Roboto;
+    color: $rgba85;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  .steps-com {
+    margin-bottom: 30px;
+  }
+}
