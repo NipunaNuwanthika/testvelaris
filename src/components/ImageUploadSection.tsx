@@ -9,7 +9,9 @@ interface ImageUploadSectionProps {
   headerText: string;
 }
 
-const ImageUploadSection: React.FC<ImageUploadSectionProps> = ({ headerText }) => {
+const ImageUploadSection: React.FC<ImageUploadSectionProps> = ({
+  headerText,
+}) => {
   const props: UploadProps = {
     name: "file",
     multiple: true,

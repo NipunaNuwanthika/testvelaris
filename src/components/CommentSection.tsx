@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "antd";
 import { LikeOutlined, StarOutlined } from "@ant-design/icons";
-import avatarImg from "../assets/avatar.png";
 
 interface CommentSectionProps {
   username: string;

@@ -1,8 +1,8 @@
-import React from 'react';
-import { Tabs } from 'antd';
-import TabsPane1 from './TabsPane1';
-import TabsPane2 from './TabsPane2';
-import TabsPane3 from './TabsPane3';
+import React from "react";
+import { Tabs } from "antd";
+import TabsPane1 from "./TabsPane1";
+import TabsPane2 from "./TabsPane2";
+import TabsPane3 from "./TabsPane3";
 
 const { TabPane } = Tabs;
 
